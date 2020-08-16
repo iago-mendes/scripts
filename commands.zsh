@@ -13,6 +13,7 @@ function start()
 		xdg-open "https://calendar.google.com/calendar/r?tab=rc"
 		xdg-open "https://mail.google.com/mail/u/0/?ogbl#inbox"
 		xdg-open "https://mail.google.com/mail/u/1/#inbox"
+		exit
 	elif [ "$1" = "coding" ]; then
 		cd ~/Desktop/Coding
 		if [ "$2" = "cinephix" ]; then
