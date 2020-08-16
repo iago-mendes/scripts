@@ -1,5 +1,5 @@
 ONLINE_DRIVE="/run/user/1000/gvfs/google-drive:host=oberlin.edu,user=ibrazmen"
-OFFLINE_DRIVE="/home/iago/Desktop/Offline\ Drive"
+OFFLINE_DRIVE="/home/iago/Desktop/Offline Drive"
 
 function update()
 {
