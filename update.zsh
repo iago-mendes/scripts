@@ -5,7 +5,7 @@ function update()
 {
     if [ "$1" = "drive" ]; then
         if [ "$2" = "from" ]; then
-            rclone copy $ONLINE_DRIVE $OFFLINE_DRIVE
+            rclone copy $ONLINE_DRIVE $OFFLINE_DRIVE --max-size 500M
         else
             rclone copy $OFFLINE_DRIVE $ONLINE_DRIVE
         fi
