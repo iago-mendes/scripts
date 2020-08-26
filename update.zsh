@@ -1,5 +1,5 @@
 ONLINE_DRIVE="Drive:"
-OFFLINE_DRIVE="/home/iago/Desktop/Offline Drive"
+OFFLINE_DRIVE="/home/iago/Drive"
 
 function update()
 {
@@ -7,7 +7,7 @@ function update()
         if [ "$2" = "from" ]; then
             rclone copy $ONLINE_DRIVE $OFFLINE_DRIVE --max-size 500M
         else
-            rclone copy $OFFLINE_DRIVE $ONLINE_DRIVE
+            rclone sync $OFFLINE_DRIVE $ONLINE_DRIVE
         fi
     elif [ "$1" = "system" ]; then
         sudo apt update

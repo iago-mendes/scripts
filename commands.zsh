@@ -11,5 +11,5 @@ function git-ac() # git add and commit
 	git commit -m "$1"
 }
 
-source '/home/iago/Desktop/Coding/scripts/start.zsh'
-source '/home/iago/Desktop/Coding/scripts/update.zsh'
+source '/home/iago/Coding/scripts/start.zsh'
+source '/home/iago/Coding/scripts/update.zsh'
