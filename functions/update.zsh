@@ -11,7 +11,8 @@ function update()
         fi
     elif [ "$1" = "system" ]; then
         sudo apt update
-        sudo apt upgrade
+        sudo apt upgrade -y
+        sudo apt autoremove -y
     else
         echo "$1 is not an option of the 'update' command."
     fi
