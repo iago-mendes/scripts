@@ -1,4 +1,4 @@
-# QUICK COMMANDS
+source '/home/iago/Coding/scripts/credentials.zsh'
 
 function commands() # open this file
 {
@@ -13,3 +13,4 @@ function git-ac() # git add and commit
 
 source '/home/iago/Coding/scripts/start.zsh'
 source '/home/iago/Coding/scripts/update.zsh'
+source '/home/iago/Coding/scripts/vpn.zsh'
