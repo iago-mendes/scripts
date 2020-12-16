@@ -5,9 +5,9 @@ function update()
 {
 	if [ "$1" = "drive" ]; then
 		if [ "$2" = "from" ]; then
-			rclone copy $ONLINE_DRIVE $OFFLINE_DRIVE --max-size 500M --stats 500ms
+			rclone copy $ONLINE_DRIVE $OFFLINE_DRIVE --max-size 500M --verbose --stats 500ms
 		else
-			rclone sync $OFFLINE_DRIVE $ONLINE_DRIVE --stats 500ms
+			rclone sync $OFFLINE_DRIVE $ONLINE_DRIVE --verbose --stats 500ms
 		fi
 	elif [ "$1" = "system" ]; then
 		sudo apt update
