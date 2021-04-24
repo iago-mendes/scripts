@@ -1,4 +1,5 @@
 source '/home/iago/Coding/scripts/credentials.zsh'
+source '/home/iago/Coding/scripts/paths.zsh'
 
 function commands() # open this file
 {
