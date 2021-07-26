@@ -15,3 +15,4 @@ function git-ac() # git add and commit
 source '/home/iago/Coding/scripts/functions/start.zsh'
 source '/home/iago/Coding/scripts/functions/update.zsh'
 source '/home/iago/Coding/scripts/functions/vpn.zsh'
+source '/home/iago/Coding/scripts/functions/connect.zsh'

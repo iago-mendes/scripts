@@ -1,2 +1,7 @@
+# vpn
 VPN_OBERLIN_USER=""
 VPN_OBERLIN_PASS=""
+
+# connect
+STARVIEW_KEY_PATH=""
+STARVIEW_IP=""
