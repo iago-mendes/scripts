@@ -1,5 +1,4 @@
-export PATH="$HOME/.yarn/bin:$PATH"
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 ZSH_THEME="myTheme"
 
 plugins=(zsh-autosuggestions)
