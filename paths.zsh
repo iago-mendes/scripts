@@ -1,6 +1,6 @@
-if [ -d "~/.yarn/bin" ]; then
-	export PATH="$PATH:~/.yarn/bin"
+if [ -d ~/.yarn/bin ]; then
+	PATH=$PATH:~/.yarn/bin
 fi
-if [ -d "~/Apps/bin" ]; then
-  export PATH="$PATH:~/Apps/bin"
+if [ -d ~/Apps/bin ]; then
+  PATH=$PATH:~/Apps/bin
 fi

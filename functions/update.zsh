@@ -1,6 +1,3 @@
-ONLINE_DRIVE="Drive:"
-OFFLINE_DRIVE="/home/iago/Drive"
-
 function update()
 {
 	if [ "$1" = "drive" ]; then

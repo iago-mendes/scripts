@@ -1,5 +1,5 @@
-source "$HOME/Coding/scripts/.env.zsh"
-source "$HOME/Coding/scripts/paths.zsh"
+source $SCRIPTS_PATH/.env.zsh
+source $SCRIPTS_PATH/paths.zsh
 
 function git-ac() # git add and commit
 {
@@ -7,6 +7,6 @@ function git-ac() # git add and commit
 	git commit -m "$1"
 }
 
-source "$HOME/Coding/scripts/functions/start.zsh"
-source "$HOME/Coding/scripts/functions/update.zsh"
-source "$HOME/Coding/scripts/functions/connect.zsh"
+source $SCRIPTS_PATH/functions/start.zsh
+source $SCRIPTS_PATH/functions/update.zsh
+source $SCRIPTS_PATH/functions/connect.zsh
