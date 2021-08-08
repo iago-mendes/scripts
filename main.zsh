@@ -9,5 +9,4 @@ function git-ac() # git add and commit
 
 source "$HOME/Coding/scripts/functions/start.zsh"
 source "$HOME/Coding/scripts/functions/update.zsh"
-source "$HOME/Coding/scripts/functions/vpn.zsh"
 source "$HOME/Coding/scripts/functions/connect.zsh"
