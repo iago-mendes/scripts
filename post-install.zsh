@@ -50,7 +50,7 @@ curl -L https://download.opera.com/download/get/?partner=www&opsys=Linux > ~/Dow
 sudo dpkg -i ~/Downloads/opera.deb
 rm ~/Downloads/opera.deb
 curl -L https://raw.githubusercontent.com/iago-mendes/setup-widevine-linux/main/download/libffmpeg.so > ~/Downloads/libffmpeg.so
-sudo cp libffmpeg.so /usr/lib/x86_64-linux-gnu/opera
+sudo cp libffmpeg.so /usr/lib/xgi86_64-linux-gnu/opera
 rm ~/Downloads/libffmpeg.so
 
 # flathub
@@ -76,5 +76,5 @@ flathubApps=(
 )
 for app in "$flathubApps[@]"
 do
-	flatpak install -y flathub org.stellarium.Stellarium
+	flatpak install -y flathub "$app"
 done
