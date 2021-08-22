@@ -12,12 +12,20 @@ curl -fsSL -o ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/myTheme.zsh-theme https:
 curl -fsSL -o ~/.zshrc https://raw.githubusercontent.com/iago-mendes/scripts/master/terminal/.zshrc
 source ~/.zshrc
 
-# coding tools => nodejs, yarn, expo, vercel, docker
+# nodej
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt-get install -y nodejs
+
+# yarn
 sudo npm install --global yarn
+
+# expo
 yarn global add expo-cli
+
+# vercel
 yarn global add vercel
+
+# docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 echo \
   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
@@ -25,20 +33,19 @@ echo \
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
-# coding apps => vim, texmaker, vscode, insonmia
-sudo apt install -y vim texmaker
-curl -fsSL -o ~/Downloads/vscode.deb https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
-sudo dpkg -i ~/Downloads/vscode.deb
-rm ~/Downloads/vscode.deb
-curl -L https://updates.insomnia.rest/downloads/ubuntu/latest?&app=com.insomnia.app&source=website > ~/Downloads/insomnia.deb
-sudo dpkg -i ~/Downloads/insomnia.deb
-rm ~/Downloads/insomnia.deb
+# vim
+sudo apt install -y vim
 
-# useful apps => notion, opera
+# Texmaker
+sudo apt install -y texmaker
+
+# Notion / Lotion
 curl -L https://raw.githubusercontent.com/puneetsl/lotion/master/setup.sh > ~/Downloads/notion.sh
 chmod +x ~/Downloads/notion.sh
 sudo ~/Downloads/notion.sh native
 rm ~/Downloads/notion.sh
+
+# Opera
 curl -L https://download.opera.com/download/get/?partner=www&opsys=Linux > ~/Downloads/opera.deb
 sudo dpkg -i ~/Downloads/opera.deb
 rm ~/Downloads/opera.deb
@@ -46,17 +53,28 @@ curl -L https://raw.githubusercontent.com/iago-mendes/setup-widevine-linux/main/
 sudo cp libffmpeg.so /usr/lib/x86_64-linux-gnu/opera
 rm ~/Downloads/libffmpeg.so
 
-# audiovisual apps => audacity, gimp, inkscape, obs, kdenlive
-sudo add-apt-repository ppa:ubuntuhandbook1/audacity
-sudo add-apt-repository ppa:inkscape.dev/stable-1.1
-sudo apt install -y ffmpeg
-sudo add-apt-repository ppa:obsproject/obs-studio
-sudo add-apt-repository ppa:kdenlive/kdenlive-stable
-sudo apt-get update
-sudo apt install -y audacity gimp inkscape obs-studio kdenlive
-
-# stem apps => stellarium, geogebra
-if [ ! -d "~/Apps" ]; then
-	mkdir ~/Apps
-fi
-curl -L https://github.com/Stellarium/stellarium/releases/download/v0.21.1/stellarium-0.21.1-x86_64.AppImage > ~/Apps/Stellarium.AppImage
+# flathub
+flathubApps=(
+	'flatpak install flathub com.visualstudio.code' # VS code
+	'rest.insomnia.Insomnia' # Insomnia
+	'com.github.xournalpp.xournalpp' # Xournal++
+	'org.chromium.Chromium' # Chromium
+	'com.github.micahflee.torbrowser-launcher' # Tor Browser
+	'org.audacityteam.Audacity' # Audacity
+	'org.gimp.GIMP' # GIMP
+	'org.inkscape.Inkscape' # Inkscape
+	'com.obsproject.Studio' # OBS Studio
+	'org.kde.kdenlive' # Kdenlive
+	'flathub org.stellarium.Stellarium' # Stellarium
+	'org.geogebra.GeoGebra' # GeoGebra
+	'org.gnome.Boxes' # Boxes
+	'org.qbittorrent.qBittorrent' # qBittorrent
+	'org.libreoffice.LibreOffice' # LibreOffice
+	'us.zoom.Zoom' # Zoom
+	'org.telegram.desktop' # Telegram
+	'com.discordapp.Discord' # Discord
+)
+for app in "$flathubApps[@]"
+do
+	flatpak install -y flathub org.stellarium.Stellarium
+done
