@@ -47,7 +47,7 @@ rm ~/Downloads/notion.sh
 
 # flathub
 flathubApps=(
-	'flatpak install flathub com.visualstudio.code' # VS code
+	'com.visualstudio.code' # VS code
 	'rest.insomnia.Insomnia' # Insomnia
 	'com.github.xournalpp.xournalpp' # Xournal++
 	'org.chromium.Chromium' # Chromium
