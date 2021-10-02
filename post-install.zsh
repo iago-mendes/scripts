@@ -12,7 +12,7 @@ curl -fsSL -o ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/myTheme.zsh-theme https:
 curl -fsSL -o ~/.zshrc https://raw.githubusercontent.com/iago-mendes/scripts/master/terminal/.zshrc
 source ~/.zshrc
 
-# nodej
+# nodejs
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
@@ -44,14 +44,6 @@ curl -L https://raw.githubusercontent.com/puneetsl/lotion/master/setup.sh > ~/Do
 chmod +x ~/Downloads/notion.sh
 sudo ~/Downloads/notion.sh native
 rm ~/Downloads/notion.sh
-
-# Opera
-curl -L https://download.opera.com/download/get/?partner=www&opsys=Linux > ~/Downloads/opera.deb
-sudo dpkg -i ~/Downloads/opera.deb
-rm ~/Downloads/opera.deb
-curl -L https://raw.githubusercontent.com/iago-mendes/setup-widevine-linux/main/download/libffmpeg.so > ~/Downloads/libffmpeg.so
-sudo cp libffmpeg.so /usr/lib/xgi86_64-linux-gnu/opera
-rm ~/Downloads/libffmpeg.so
 
 # flathub
 flathubApps=(
