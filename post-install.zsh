@@ -11,6 +11,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 curl -fsSL -o ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/myTheme.zsh-theme https://raw.githubusercontent.com/iago-mendes/scripts/master/terminal/myTheme.zsh-theme
 curl -fsSL -o ~/.zshrc https://raw.githubusercontent.com/iago-mendes/scripts/master/terminal/.zshrc
 source ~/.zshrc
+chsh -s /bin/zsh
 
 # nodejs
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
