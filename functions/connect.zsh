@@ -3,6 +3,8 @@ function connect()
 	if [ "$1" = "ssh" ]; then
 		if [ "$2" = "starview" ]; then
 			ssh -i $STARVIEW_KEY_PATH iago@$STARVIEW_IP
+		elif [ "$2" = "starview-do" ]; then # Digital Ocean
+			ssh iago@$STARVIEW_DO_IP
 		elif [ "$2" = "digital-ocean" ]; then
 			ssh iago@$DIGITAL_OCEAN_IP
 		elif [ "$2" = "cs-oberlin" ]; then
