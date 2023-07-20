@@ -1,15 +1,19 @@
-# vpn
+# connect vpn
+VPN_OBERLIN_ADDRESS="vpn.cc.oberlin.edu"
 VPN_OBERLIN_USER=""
 VPN_OBERLIN_PASS=""
 
-# connect
+# connect ssh
 STARVIEW_KEY_PATH=
 STARVIEW_IP=""
 STARVIEW_DO_IP=""
 DIGITAL_OCEAN_IP=""
-OBERLIN_CS_ADDRESS=clyde.cs.oberlin.edu=""
+OBERLIN_CS_ADDRESS="clyde.cs.oberlin.edu"
 OBERLIN_CS_USER=""
 OBERLIN_CS_PASS=""
+SCIURUS_ADDRESS="172.16.2.146"
+SCIURUS_USER=""
+SCIURUS_PASS=""
 
 # update
 ONLINE_DRIVE=
