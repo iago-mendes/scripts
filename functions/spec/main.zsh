@@ -5,7 +5,7 @@ function spec() {
 			;;
 		
 		"PlotGW")
-			python $SCRIPTS_PATH/functions/spec/PlotGW.py $2 $3 $4
+			python $SCRIPTS_PATH/functions/spec/PlotGW.py $2
 			;;
 
 		*)
