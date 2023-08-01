@@ -24,3 +24,11 @@ function connect()
 		echo "$1 is not an option of the 'connect' command"
 	fi
 }
+
+function cssh() {
+	connect ssh $@
+}
+
+function cvpn() {
+	connect vpn $@
+}
