@@ -8,6 +8,10 @@ function spec() {
 			python $SCRIPTS_PATH/functions/spec/PlotGW.py $2
 			;;
 
+		"PlotMetricError")
+			python $SCRIPTS_PATH/functions/spec/PlotMetricError.py $2
+			;;
+
 		*)
 			singularity exec --env APPEND_PATH=$SPEC_HOME/Support/bin $SPEC_IMAGE_DIR/spec.sif $@
 			;;
